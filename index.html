@@ -13,10 +13,16 @@
    text-align: center; 
 
 }
-tw-story {
+tw-story  {
 background-image:url("https://i.redd.it/2e5rtu0ss39c1.png");
+background-size: cover;
+}
+
+}
+tw-story [tags~="Space"] {
+background-image:url("https://i.imgur.com/cjD7RxA.jpeg");
 background-size:cover;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="800,200" size="100,100">There are sheep trying to cross your field.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Grass" color="green"></tw-tag><tw-tag name="Space" color="purple"></tw-tag><tw-passagedata pid="1" name="Untitled Passage" tags="Grass" position="800,200" size="100,100">There are sheep trying to cross your field.
 &lt;style&gt; img {
 max-width:50%;
 max-height: 50%;
@@ -35,7 +41,7 @@ They must be stopped. But how?
 [[Build a fence-&gt;Build a wall]] or [[attempt negotiations]]
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Scenario 1 result" tags="" position="775,475" size="100,100">The sheep have been thwarted. They could not cross the field.
+</tw-passagedata><tw-passagedata pid="2" name="Scenario 1 result" tags="Grass" position="800,600" size="100,100">The sheep have been thwarted. They could not cross the field.
 &lt;style&gt; img {
 max-width:50%;
 max-height: 50%;
@@ -47,19 +53,31 @@ src=https://i.imgur.com/MSOGFcN.png&gt;
 &lt;/div&gt;
 
 You can see them threatening another paddock in the distance, looks like it&#39;s [[Time to go-&gt;Scenario 2]]
-</tw-passagedata><tw-passagedata pid="3" name="try something else" tags="" position="775,900" size="100,100">Good thinking, the sheep would have got in
+</tw-passagedata><tw-passagedata pid="3" name="try something else" tags="" position="1200,1050" size="100,100">Good thinking, the sheep would have got in
 
 Image 
 
-How about trying this one?</tw-passagedata><tw-passagedata pid="4" name="yes" tags="" position="575,775" size="100,100">//&#39;&#39;Ohh nooooooooo. 
-&#39;&#39;//
-Max hasn&#39;t got this far yet in making the sheep fences game.</tw-passagedata><tw-passagedata pid="5" name="attempt negotiations" tags="" position="1000,300" size="100,100">The sheep are well schooled in diplomacy, but poorly skilled in speaking to humans.
+How about trying this one?</tw-passagedata><tw-passagedata pid="4" name="Scenario 3" tags="Grass" position="800,1075" size="100,100">We have only got two fences this time. 
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/sEayuyN.png&gt;
+&lt;/div&gt;
+
+Think about how you might stop the sheep crossing the field with only two fences. Maybe try working it out on a piece of paper before continuing.
+
+Do you [[need a hint]] or are you ready to [[see the first option-&gt;Scenario 3 option 1]]</tw-passagedata><tw-passagedata pid="5" name="attempt negotiations" tags="Grass" position="1000,300" size="100,100">The sheep are well schooled in diplomacy, but poorly skilled in speaking to humans.
 
 The negotiations fail.
 
 There is only one solution.
 
-[[Build a wall]] </tw-passagedata><tw-passagedata pid="6" name="Build a wall" tags="" position="800,325" size="100,100">Good thinking. 
+[[Build a wall]] </tw-passagedata><tw-passagedata pid="6" name="Build a wall" tags="Grass" position="800,325" size="100,100">Good thinking. 
 &lt;style&gt; img {
 max-width:50%;
 max-height: 50%;
@@ -74,9 +92,10 @@ You can place your fence anywhere, in any direction, on your field.
 
 But if the sheep cross any two edges, you have lost.
 
-You&#39;ve got four pieces of fence you can use. [[Time to get building]]
+You&#39;ve got four pieces of fence you can use. [[Build around all four sides of the field.-&gt;Time to get building]]
+Or [[see what happens if we don&#39;t build a fence-&gt;Scenario 1 no fence]]
 
-</tw-passagedata><tw-passagedata pid="7" name="Scenario 2 Result" tags="" position="775,650" size="100,100">Brilliant work commander. The sheep were unable to breach our defences.
+</tw-passagedata><tw-passagedata pid="7" name="Scenario 2 Result" tags="Grass" position="800,900" size="100,100">Brilliant work commander. The sheep were unable to breach our defences, but it is going to get more difficult from here.
 
 &lt;style&gt; img {
 max-width:50%;
@@ -89,9 +108,9 @@ src=https://i.imgur.com/jDUl19X.png&gt;
 &lt;/div&gt;
 
 
-But they have already moved onto another of our field. [[Quick! To the next field before the sheep get there!-&gt;yes]]
+They have already moved onto another of our field. [[Quick! To the next field before the sheep get there!-&gt;Scenario 3]]
 
-</tw-passagedata><tw-passagedata pid="8" name="Time to get building" tags="" position="925,450" size="100,100">Should we build it like this?
+</tw-passagedata><tw-passagedata pid="8" name="Time to get building" tags="Grass" position="800,450" size="100,100">Should we build it like this?
 &lt;style&gt; img {
 max-width:50%;
 max-height: 50%;
@@ -103,7 +122,8 @@ src=https://i.imgur.com/51DBdMH.png&gt;
 &lt;/div&gt;
 
 
-[[Yes!-&gt;Scenario 1 result]]</tw-passagedata><tw-passagedata pid="9" name="Scenario 2" tags="" position="900,600" size="100,100">But your resources are scarce.
+[[Yes!-&gt;Scenario 1 result]] 
+Or [[how about we don&#39;t build a fence?-&gt;Scenario 1 no fence]]</tw-passagedata><tw-passagedata pid="9" name="Scenario 2" tags="Grass" position="800,750" size="100,100">But your resources are becoming more scarce.
 &lt;style&gt; img {
 max-width:50%;
 max-height: 50%;
@@ -117,8 +137,231 @@ You only have three fences you can use on this field.
 
 But you must still prevent the sheep crossing the field. Will you try this design?
 
-[[Yes!-&gt;Scenario 2 Result]]
-</tw-passagedata></tw-storydata>
+[[Yes!-&gt;Scenario 2 Result]] or [[let&#39;s try something else-&gt;Scenario 2 Alternate]]
+</tw-passagedata><tw-passagedata pid="10" name="need a hint" tags="Grass" position="625,1200" size="100,100">Our spies amoungst the sheep have a hint for you.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/Pytbck9.png&gt;
+&lt;/div&gt;
+
+&quot;Remebaaahh, you can place the //bahhhh// fences //bahhhh// diagonally across the field //bahhh// not just along the edges.
+
+Try out some ideas on paper and then let&#39;s [[see some options-&gt;Scenario 3 option 1]] </tw-passagedata><tw-passagedata pid="11" name="Scenario 3 option 1" tags="Grass" position="800,1200" size="100,100">How about this? Will it keep the sheep from crossing the field?
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/RpO3cbP.png&gt;
+&lt;/div&gt;
+
+[[Yes, let&#39;s give it a go-&gt;Scenario 3 wrong result 1]] or [[try something else-&gt;Scenario 3 option 2]] 
+</tw-passagedata><tw-passagedata pid="12" name="Scenario 3 wrong result 1" tags="Grass" position="975,1200" size="100,100">Look&#39;s like that one didn&#39;t work. The sheep managed to cross the field diagonally.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/Cghz1vP.png&gt;
+&lt;/div&gt;
+
+Let&#39;s get a little more creative and [[try something else-&gt;Scenario 3 option 2]]</tw-passagedata><tw-passagedata pid="13" name="Scenario 3 option 2" tags="Grass" position="800,1350" size="100,100">It&#39;s not pretty but this might just work. Should we give it a go?
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/cjr06RO.png&gt;
+&lt;/div&gt;
+
+[[Lets do it-&gt;Scenario 3 Option 2 Result]] or [[try something else-&gt;Scenario 3 alt 3]]</tw-passagedata><tw-passagedata pid="14" name="Scenario 3 Option 2 Result" tags="Grass" position="800,1475" size="100,100">Looks like we managed to stop them.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/45eWUVz.png&gt;
+&lt;/div&gt;
+
+But that was just the beginning. The sheep are attacking our space farms.
+[[To the rocketship]]</tw-passagedata><tw-passagedata pid="15" name="To the rocketship" tags="Space" position="800,1600" size="100,100">&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/wnGzusW.png&gt;
+&lt;/div&gt;
+
+[[Dock at the space station]]</tw-passagedata><tw-passagedata pid="16" name="Scenario 2 Alternate" tags="" position="925,750" size="100,100">How about this one? Will it stop the sheep crossing the field?
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/jVTcjgO.png&gt;
+&lt;/div&gt;
+
+[[Yes!-&gt;Scenario 2 Alt 1 Result]] or [[Let&#39;s try something else-&gt;Scenario 2 Alt 2]]</tw-passagedata><tw-passagedata pid="17" name="Scenario 2 Alt 1 Result" tags="" position="925,900" size="100,100">Brilliant work commander. You&#39;ve stopped the sheep crossing the field.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/HXES46k.png&gt;
+&lt;/div&gt;
+
+
+No time to celebrate, they have already moved onto another of our field. [[Quick! To the next field before the sheep get there!-&gt;Scenario 3]]
+</tw-passagedata><tw-passagedata pid="18" name="Scenario 2 Alt 2" tags="" position="1050,750" size="100,100">Ok should we try this one? Will it stop the sheep crossing the field?
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/pI6d43I.png&gt;
+&lt;/div&gt;
+
+[[Yes!-&gt;Scenario 2 Alt 2 Result]] or [[Let&#39;s try something else-&gt;Scenario 2 Alternate]]</tw-passagedata><tw-passagedata pid="19" name="Scenario 2 Alt 2 Result" tags="" position="1050,900" size="100,100">Brilliant work commander. You&#39;ve stopped the sheep crossing the field.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/8GwgBGW.png&gt;
+&lt;/div&gt;
+
+
+Not time to celebrate have already moved onto another of our field. [[Quick! To the next field before the sheep get there!-&gt;Scenario 3]]
+</tw-passagedata><tw-passagedata pid="20" name="Dock at the space station" tags="" position="800,1725" size="100,100">These space fields are strange shapes, this could be tricky.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/svheA71.gif&gt;
+&lt;/div&gt;
+
+Which field should we fence first?
+[[The hexagon?-&gt;HEXAGON]] or [[the k shaped one?-&gt;K SHAPE]] or [[maybe that one that looks like a crown?-&gt;CROWN]]</tw-passagedata><tw-passagedata pid="21" name="Scenario 3 alt 3" tags="" position="975,1350" size="100,100">
+Should we try this one?
+
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/UzLNlCb.png&gt;
+&lt;/div&gt;
+
+[[Lets see what happens-&gt;Scenario 3 alt 3 result]] or [[try something else-&gt;Scenario 3 option 1]]
+</tw-passagedata><tw-passagedata pid="22" name="Scenario 3 alt 3 result" tags="" position="950,1500" size="100,100">Look&#39;s like that one didn&#39;t work. The sheep still managed to cross the field diagonally.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/0SyxcKJ.png&gt;
+&lt;/div&gt;
+Maybe have a go with a pen and paper. 
+Then let&#39;s get a little more creative and [[try again-&gt;Scenario 3 option 2]]</tw-passagedata><tw-passagedata pid="23" name="HEXAGON" tags="" position="800,1850" size="100,100">We could bring only so many fences on the space ship. We have only three fences to stop the sheep crossing this field.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/xxXFrwb.png&gt;
+&lt;/div&gt;
+
+Think about how you might stop the sheep crossing the field with only three fences. Maybe try working it out on a piece of paper before continuing.
+
+Do you [[need a hint-&gt;hint scenario hexagon]] or are you ready to [[see the first option-&gt;Scenario 3 option 1]]</tw-passagedata><tw-passagedata pid="24" name="K SHAPE" tags="" position="1100,1850" size="100,100">We could bring only so many fences on the space ship. 
+
+We have only three fences to stop the sheep crossing this field.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/wSsLjQ8.png&gt;
+&lt;/div&gt;
+
+Think about how you might stop the sheep crossing this field with only three fences. Maybe try working it out on a piece of paper before continuing.
+
+Do you [[need a hint-&gt;hint scenario k]] or are you ready to [[see the first option-&gt;Scenario K option 1]]</tw-passagedata><tw-passagedata pid="25" name="CROWN" tags="" position="500,1850" size="100,100">We could bring only so many fences on the space ship. We have only two fences to stop the sheep crossing this field.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/aRFJoGx.png&gt;
+&lt;/div&gt;
+
+Think about how you might stop the sheep crossing the field with only three fences. Maybe try working it out on a piece of paper before continuing.
+
+Do you [[need a hint-&gt;Hint Scenario Crown]] or are you ready to [[see the first option-&gt;Scenario Crown option 1]]</tw-passagedata><tw-passagedata pid="26" name="Scenario K option 1" tags="" position="1225,2050" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="hint scenario k" tags="" position="1100,1975" size="100,100"></tw-passagedata><tw-passagedata pid="28" name="hint scenario hexagon" tags="" position="800,1975" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Hint Scenario Crown" tags="" position="500,1975" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="Scenario Crown option 1" tags="" position="375,2050" size="100,100"></tw-passagedata><tw-passagedata pid="31" name="Scenario 1 no fence" tags="" position="600,450" size="100,100">Seems like this wasn&#39;t a great idea.
+
+&lt;style&gt; img {
+max-width:50%;
+max-height: 50%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://i.imgur.com/JQQVBL5.png&gt;
+&lt;/div&gt;
+
+With no fences the sheep are easily able to cross the field.
+[[Perhaps try building a fence-&gt;Time to get building]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
